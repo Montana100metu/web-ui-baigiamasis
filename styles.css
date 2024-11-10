@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+ 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* Header */
+header {
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  height: fit-content;
+  
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+header .signin {
+  background: #007bff;
+  font-size: 12px;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 500ms ease;
+  text-decoration: none;
+  height: 30px;
+}
+
+
+
+
+
+/* Features */
+.features {
+  background: url('./images/bg-masthead.jpg') no-repeat center center / cover;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.sea2 {
+  padding: 40px 40px;
+}
+
+.sea2 .hero h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+  text-align: center;
+  font-weight: 600;
+  margin: 30px;
+}
+
+.sea2 form {
+  display: flex;
+  justify-content: center;
+
+}
+
+.sea2 input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  height: 40px;
+
+}
+
+.sea2 button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+}
+
+
+
+
+
+/* sea */
+
+.sea {
+
+  background: #f9f9f9;
+  padding: 40px 20px;
+  color: black;
+
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.features {
+  background: url('./images/bg-masthead.jpg') no-repeat center center / cover;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  flex-direction: row;
+}
+
+
+.feature {
+  flex: 1;
+  padding: 20px;
+}
+
+.feature img {
+  max-width: 50px;
+  margin-bottom:15px;
+}
+
+/* Content */
+.content {
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+
+.text-image {
+ display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 48%; /* Fixed width */
+
+  height: 300px; /* Fixed height */
+  padding: 20px;
+}
+
+.text-image img {
+  max-width: 48%;
+  margin: 0 20px;
+}
+
+.text-image.reverse {
+  flex-direction: column-reverse;
+}
+
+/* Media query for wider screens */
+@media (min-width: 780px) {
+  .text-image {
+    flex-direction: row;
+    
+    height: auto; /* Auto height on smaller screens */
+  }
+
+  .text-image.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+
+}
+
+/* Testimonials */
+.testimonials-wrapper {
+  background: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonials {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 40px 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.testimonials h2 {
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  width: 200px;
+  margin: 0 10px;
+  min-height: 200px;
+}
+
+.testimonial img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Call to Action */
+.cta {
+  background: url('./images/bg-masthead.jpg') no-repeat center center / cover;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta form {
+  display: flex;
+  justify-content: center;
+}
+
+.cta input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.cta button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .footer-links a {
+  color: #007bff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer p {
+  margin-top: 10px;
+}
